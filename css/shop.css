@@ -1,0 +1,141 @@
+.shopLayout {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.wrapper {
+  margin: 50px;
+  display: flex;
+  flex-direction: column;
+  padding: 0rem;
+  border-radius: 7px 7px 7px 7px;
+  -webkit-box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 14px 32px 0px rgba(0, 0, 0, 0.15);
+}
+
+.product-img {
+  float: left;
+  height: 420px;
+  width: 327px;
+}
+
+.product-img img {
+  border-radius: 7px 0 0 7px;
+}
+
+.product-info {
+  float: left;
+  height: 420px;
+  width: 327px;
+  border-radius: 0 7px 10px 7px;
+  background-color: #ffffff;
+}
+
+.product-text {
+  height: 300px;
+  width: 327px;
+}
+
+.product-text h1 {
+  margin: 0 0 0 38px;
+  padding-top: 52px;
+  font-size: 34px;
+  color: #4f000b;
+}
+
+.product-text h1,
+.product-price-btn p {
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+.product-text h2 {
+  margin: 0 0 47px 38px;
+  font-size: 13px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #d2d2d2;
+  letter-spacing: 0.2em;
+}
+
+.product-text p {
+  height: 125px;
+  margin: 0 0 0 38px;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  color: #8d8d8d;
+  letter-spacing: 0.1rem;
+  line-height: 30px;
+  font-size: 15px;
+  font-weight: lighter;
+  overflow: hidden;
+}
+
+.product-price-btn {
+  height: 103px;
+  width: 327px;
+  margin-top: 17px;
+  position: relative;
+}
+
+.product-price-btn p {
+  display: inline-block;
+  position: absolute;
+  top: -13px;
+  height: 50px;
+  font-family: "Trocchi", serif;
+  margin: 0 0 0 38px;
+  font-size: 28px;
+  font-weight: lighter;
+  color: #474747;
+}
+
+span {
+  display: inline-block;
+  height: 55px;
+  font-family: "Suranna", serif;
+  font-size: 34px;
+  padding-top: 14px;
+}
+
+.product-price-btn button {
+  float: right;
+  display: inline-block;
+  height: 50px;
+  width: 176px;
+  margin: 0 40px 0 16px;
+  box-sizing: border-box;
+  border-radius: 60px;
+  font-family: "Raleway", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  background-color: #4f000b;
+  color: #ff9b54;
+  cursor: pointer;
+  outline: none;
+}
+
+.product-price-btn button:hover {
+  background-color: #ff9b54;
+  color: #4f000b;
+  font-size: 14px;
+  height: 50px;
+  width: 176px;
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 768px) {
+  .wrapper {
+    display: flex;
+    flex-direction: row;
+    height: 420px;
+    width: 654px;
+    margin: 30px;
+  }
+  .shopLayout1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}

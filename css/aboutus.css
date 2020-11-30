@@ -1,0 +1,115 @@
+.aboutUs {
+  color: #4f000b;
+  padding: 1 rem;
+  text-align: center;
+  font-size: 1rem;
+}
+.flip-card {
+  background-color: transparent;
+  width: 350px;
+  height: 400px;
+  perspective: 1000px;
+  display: flex;
+  flex-direction: row;
+  margin: 50px;
+}
+
+/* card positioning */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.5s;
+  transform-style: preserve-3d;
+}
+
+/* this is for the flip on the cards */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position for  the front and back side */
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+/* Style for the back side */
+.flip-card-back {
+  background-color: white;
+  color: black;
+  transform: rotateY(180deg);
+  padding-left: 1rem;
+  padding-right: 1rem;
+  /* added padding for the test inside as it was too close to the edge. MG */
+}
+
+/* grid alignment */
+.containerCards {
+  display: block;
+  flex-direction: column;
+  justify-content: center;
+  /* cannot seem to be able to get it right to the centre for the phone disply. MG */
+}
+
+.artisth1 {
+  padding-top: 5rem;
+}
+
+.artistContainer {
+  padding-top: 0.5rem;
+  padding-bottom: 5rem;
+  display: block;
+  flex-direction: column;
+}
+.artistP {
+  letter-spacing: 0.1rem;
+  line-height: 30px;
+  padding: 1rem;
+  color: #4f000b;
+  font-size: 1rem;
+}
+.contactForm {
+  border-radius: 7px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: center;
+  justify-content: center;
+  max-width: 80%;
+  margin: auto;
+  color: #4f000b;
+  margin-bottom: 2rem;
+}
+/* for desktop viewing */
+@media only screen and (min-width: 768px) {
+  .containerCards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 1rem;
+    padding-left: 4rem;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 1rem;
+    padding-left: 4rem;
+  }
+  .flip-card {
+    margin: 50px;
+  }
+  .artistContainer {
+    padding-top: 0.5rem;
+    padding-bottom: 5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-left: 15rem;
+  }
+  .artistP {
+    margin-top: 2rem;
+    padding-left: 2rem;
+  }
+}

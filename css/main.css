@@ -1,0 +1,195 @@
+#button {
+  height: 50px;
+  width: 176px;
+  box-sizing: border-box;
+  border-radius: 60px;
+  font-family: "Raleway", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  background-color: #4f000b;
+  color: #ff9b54;
+  cursor: pointer;
+  outline: none;
+}
+#button:hover {
+  background-color: #ff9b54;
+  color: #4f000b;
+  font-size: 14px;
+  cursor: pointer;
+  height: 50px;
+  width: 176px;
+}
+.menu-btn:hover {
+  background-color: #ff9b54;
+  color: #4f000b;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: #ff9b54;
+  color: #4f000b;
+  cursor: pointer;
+}
+.menu-btn {
+  background-color: #4f000b;
+  font-size: 25px;
+  color: #ff9b54;
+  border-radius: 5px;
+}
+.btn {
+  background-color: #4f000b;
+  color: #ff9b54;
+}
+
+a:hover {
+  color: #4f000b;
+}
+a {
+  color: #f46a07;
+  text-decoration: underline;
+}
+#active {
+  color: #ff9b54;
+  text-decoration: underline;
+}
+
+body {
+  background-color: #ffcdaf;
+}
+.bi {
+  font-size: 1.5rem;
+}
+
+h1 {
+  padding: 1.5rem 0 1.5rem 0;
+  text-align: center;
+  color: #4f000b;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  line-height: 30px;
+}
+h2 {
+  text-align: center;
+  color: #4f000b;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  letter-spacing: 0.1rem;
+  line-height: 30px;
+}
+h3 {
+  text-align: center;
+  color: #4f000b;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  letter-spacing: 0.1rem;
+  line-height: 30px;
+}
+p {
+  letter-spacing: 0.1rem;
+  line-height: 30px;
+}
+
+/*Show the following once you submit a text sucessfully */
+#submittedText {
+  text-align: center;
+  color: greenyellow;
+}
+
+footer {
+  background-color: #4f000b;
+  color: #ff9b54;
+  padding: 0.5rem;
+  text-align: center;
+}
+
+.fa {
+  /* padding: 20px; */
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+  padding-right: 2rem;
+  padding-left: 2rem;
+}
+.fa:hover {
+  color: #ff9b54;
+}
+#Mtwitter {
+  padding-left: 0;
+}
+
+#Linsta {
+  padding-left: 0;
+}
+
+/* The side navigation menu */
+.sidenav {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: #4f000b;
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s;
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #ffffff;
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #ff9b54;
+  font-size: 27px;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 20px;
+  margin-left: 50px;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  transition: margin-left 0.5s;
+  padding: 20px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
+}
+/*display for deskktop*/
+@media screen and (min-width: 768px) {
+  .contactForm {
+    border-radius: 7px;
+    padding-right: 5rem;
+    padding-left: 5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    width: 50%;
+    color: #4f000b;
+    background: #ffb885;
+    justify-content: center;
+  }
+}
